@@ -24,7 +24,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "start npm run start-backend && start npm run start-frontend && start npm run start-recommendation",
+    "start-backend": "cd backend && nodemon index.js",
+    "start-frontend": "react-scripts start",
+    "start-recommendation": "cd Recommendation_System && uvicorn main:app --reload",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
