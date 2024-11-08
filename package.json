@@ -25,8 +25,8 @@
   },
     "scripts": {
       "start": "start npm run start-backend && start npm run start-frontend && start npm run start-recommendation",
-      "start-backend": "cd backend && node server.js",
-      "start-frontend": "cd src && react-scripts start",
+      "start-backend": "cd backend && nodemon index.js",
+      "start-frontend": "react-scripts start",
       "start-recommendation": "cd Recommendation_System && uvicorn main:app --reload",
       "build": "npm install --production && npm install --prefix && npm run build --prefix",
       "test": "react-scripts test",
