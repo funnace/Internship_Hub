@@ -28,7 +28,8 @@
       "start-backend": "cd backend && nodemon index.js",
       "start-frontend": "react-scripts start",
       "start-recommendation": "cd Recommendation_System && uvicorn main:app --reload",
-      "build": "npm install --production && npm install --prefix && npm run build --prefix",
+      "build": "npm install && npm run build-frontend && npm install --prefix backend && npm install --prefix Recommendation_System",
+      "build-frontend": "react-scripts build",
       "test": "react-scripts test",
       "eject": "react-scripts eject"
     }
